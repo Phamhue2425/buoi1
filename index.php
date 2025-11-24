@@ -101,6 +101,52 @@
         unset($mang[3]);
         print_r($mang);
         echo "<br>";
+
+        # Sắp xếp mảng
+        $mang = ["C","B","D","A"];
+        print_r($mang);
+        echo "<br>";
+        # sx tăng
+        sort($mang);
+        print_r($mang);
+        # sx giảm
+        echo "<br>";
+        rsort($mang);
+        print_r($mang);
+
+        // 11. Kiểm tra biến có tồn tại hay không
+        $bienA = "hello";
+        isset($bienA);  // trả ra true
+        isset($bienB);  // trả ra false
+
+        if(isset($bienB)){
+            echo "Biến này có tồn tại";
+        }
+        else{
+            echo "Biến này khôgn tồn tại";
+        }
+
+        // Check empty
+        $check = "";
+        if(empty($check)){
+            echo "empty" . "<br>";
+        }
+        else{
+            echo "no  empty" . "<br>";
+        }
+
+        //12 Hàm
+        # Không tham số
+        function XinChao(){
+            return "Hello" . "<br>";
+        }
+
+        # Có tham số
+        function XinChao2($ten){
+            return "Hello " . $ten;
+        }
+        echo XinChao();
+        echo XinChao2("Hue");
     ?>
 </body>
 </html>
